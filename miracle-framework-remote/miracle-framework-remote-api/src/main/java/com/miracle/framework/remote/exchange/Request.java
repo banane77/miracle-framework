@@ -8,7 +8,11 @@ import lombok.Getter;
 public final class Request implements Serializable {
 	
 	private static final long serialVersionUID = 2750646443189480771L;
-	
+
+	public long getMessageId() {
+		return messageId;
+	}
+
 	private final long messageId;
 	private final Class<?> apiClass;
 	private final String method;

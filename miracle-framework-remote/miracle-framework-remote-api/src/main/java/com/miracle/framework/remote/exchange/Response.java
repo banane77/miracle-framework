@@ -10,7 +10,17 @@ public final class Response implements Serializable {
 	private static final long serialVersionUID = 5887232731148682128L;
 	
 	private final long messageId;
+
+	public Object getReturnValue() {
+		return returnValue;
+	}
+
 	private final Object returnValue;
+
+	public Throwable getException() {
+		return exception;
+	}
+
 	private final Throwable exception;
 	
 	public Response(final long messageId, final Object returnValue) {
